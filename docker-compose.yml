@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: DB-for-JDBC
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: db-for-jdbc
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: user
+    ports:
+      - "5433:5432"

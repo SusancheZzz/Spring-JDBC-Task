@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres
+    username: user
+    password: user
+    driver-class-name: org.postgresql.Driver
+  profiles:
+    active: dev
+
+logging:
+  level:
+    org.springframework.jdbc.core: INFO
+
+users:
+  userCount: 2000
+  names: [ James, Mary, John, Patricia, Robert, Jennifer, Michael, Linda, William, Elizabeth, Emma, Olivia, Liam, Isabella, Noah ]
+  surnames: [ Smith, Johnson, Williams, Brown, Jones, Garcia, Miller, Davis, Rodriguez, Martinez ]
+  postCount: 4000
+  friendCount: 70000
+  likeCount: 300000
+  minUserAge: 14
